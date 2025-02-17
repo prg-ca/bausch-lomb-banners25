@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="ad.size" content="width=300,height=600" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "#";
+      document.addEventListener("DOMContentLoaded", function (event) {
+        TweenLite.ticker.useRAF(false);
+        TweenLite.lagSmoothing(0);
+        var tl = new TimelineMax({ repeat: 2, repeatDelay: 3});
+        // var tl = new TimelineMax();
+
+        tl.from("#schirm", 0.6, { autoAlpha: 1 })
+          .to("#pic", 1.4, { scale:  0.625, y: -20 }, "+=0.5")
+          .from("#rect", 1.4, { y: 400 }, "-=1.6")
+          .from("#grad", 0.8, { opacity: 0 }, "-=1.4")
+          // .to("#pic", 1.4, { scale:  0.625, y: -20 }, "-=0.25")
+          .from("#logo", 0.4, { opacity: 0, y: 40 }, "-=0.9")
+          .from("#slogan", 0.4, { opacity: 0, y: 20 }, "-=0.7")
+          .from("#pack1", 0.6, { opacity: 0, scale: 0.5 }, "-=0.4")
+          .to("#pack1", 0.6, { scale: 0.62, y: -94, x: 70 }, "+=0.4")
+          .from("#pack2", 0.6, { opacity: 0, scale: 0.5 }, "-=0.1")
+          .to("#pack2", 0.6, { scale: 0.62, y: -94, x: -82 }, "+=0.4")
+          .from("#pack3", 0.6, { opacity: 0, scale: 0.5 }, "-=0.1")
+          .to("#pack3", 0.6, { scale: 0.62, y: -80, x: -12 }, "+=0.4")
+          .to("#logo", 0.4, { y: -110 }, "-=0.5")
+          .to("#slogan", 0.4, { y: -110 }, "-=0.3")
+          .from("#txt01", 0.4, { opacity: 0, y: 40 }, "-=0.3")
+          .from("#address", 0.4, { opacity: 0, y: 20 }, "-=0.3")
+          
+          .from("#rect2", 0.9, { y:600 }, "+=0.9")
+          .from("#grad2", 0.4, { opacity: 0 }, "-=0.8")
+          .to("#pack1", 0.4, { y: -314 }, "-=0.6")
+          .to("#pack2", 0.4, { y: -314 }, "-=0.6")
+          .to("#pack3", 0.4, { y: -300 }, "-=0.6")
+          .from("#legal_all", 0.4, { opacity: 0, y: 40 }, "-=0.1")
+
+          .to("#legal_all", 0.5, { opacity: 0}, "+=2.5")
+          .to("#rect2", 0.5, { y: 300}, "-=0.4")
+          .to("#rect2", 0.2, { opacity: 0}, "-=0.3")
+          .to("#grad2", 0.2, { opacity: 0}, "-=0.3")
+          .to("#pack1", 0.4, { y: -94 }, "-=0.5")
+          .to("#pack2", 0.4, { y: -94 }, "-=0.5")
+          .to("#pack3", 0.4, { y: -80 }, "-=0.5")
+
+      });
+    </script>
+  </head>
+  <body>
+    <a href="javascript:window.open(window.clickTag)">
+      <div class="container">
+        <div id="pic" class="el">
+          <img src="bg.jpg" />
+        </div>
+        <div id="rect"  class="el"></div>
+        <div id="grad"  class="el"></div>
+
+        <div id="logo" class="el">
+          <img src="logo.svg" />
+        </div>
+        <div id="slogan" class="el">
+          <img src="slogan_2lines.svg" />
+        </div>
+        <div id="txt01" class="el">
+          <img src="txt01.svg" />
+        </div> 
+        <div id="address" class="el">
+          <img src="address.svg" />
+        </div> 
+        <div id="num" class="el">
+          <img src="num.svg" />
+        </div> 
+        <div id="legal" class="el">
+          <img src="legal.svg" />
+        </div> 
+        <div id="rect2"  class="el"></div>
+        <div id="grad2"  class="el"></div>
+        <div id="pack1" class="el">
+          <img src="vizleya.png" />
+        </div>
+        <div id="pack2" class="el">
+          <img src="lutein.png" />
+        </div>
+        <div id="pack3" class="el">
+          <img src="ocuvite.png" />
+        </div>
+        <div id="legal_all" class="el">
+          <img src="legal_all.svg" />
+        </div> 
+
+        <!-- 
+        <div id="cloud-l" class="el">
+          <img src="cloud.svg" />
+        </div>
+        <div id="cloud-r" class="el">
+          <img src="cloud-r.svg" />
+        </div>
+        <div id="plane-l" class="el">
+          <img src="plane.svg" />
+        </div>
+        <div id="plane-r" class="el">
+          <img src="plane-r.svg" />
+        </div>
+        <div id="palm-l" class="el">
+          <img src="palm.svg" />
+        </div>
+        <div id="palm-r" class="el">
+          <img src="palm-r.svg" />
+        </div>
+        -->
+
+        <div id="schirm"></div> 
+      </div>
+    </a>
+  </body>
+</html>
