@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="ad.size" content="width=300,height=600" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "#";
+      document.addEventListener("DOMContentLoaded", function (event) {
+        TweenLite.ticker.useRAF(false);
+        TweenLite.lagSmoothing(0);
+        // var tl = new TimelineMax({ repeat: 2, repeatDelay: 3});
+        var tl = new TimelineMax();
+
+        tl.from("#schirm", 0.6, { autoAlpha: 1 })
+          .to("#pic", 1.4, { scale:  0.625, y: -20 }, "+=0.5")
+          .from("#rect", 1.2, { y: 400 }, "-=1.6")
+          .from("#grad", 0.8, { opacity: 0 }, "-=1.4")
+
+          .from("#logo", 0.4, { opacity: 0, y: 40 }, "-=0.9")
+          .from("#slogan", 0.4, { opacity: 0, y: 20 }, "-=0.7")
+          .from("#pack", 0.6, { opacity: 0, scale: 0.4 }, "-=0.4")
+          .to("#pack", 0.6, { scale: 0.63, y: -40, x: 61 }, "+=0.4")
+
+          .to("#logo", 0.4, { y: -136, x: -19, scale: 0.73 }, "-=0.5")
+          .to("#slogan", 0.4, { y: -125 }, "-=0.3")
+          .from("#name", 0.4, { opacity: 0, y: 40 }, "-=0.3")
+          .from("#txt01", 0.4, { opacity: 0, y: 40 }, "-=0.3")
+          
+          // .to("#slogan", 0.4, { opacity: 0, y: -60}, "+=1.3")
+          // .to("#txt01", 0.4, { opacity: 0, y: 40 }, "-=0.4")
+          // .to("#name", 0.4, { y: -98 }, "-=0.3")
+          // .from("#formula", 0.4, { opacity: 0, y: 40 }, "-=0.3")
+
+          // .to("#formula", 0.4, { opacity: 0, y: 40 }, "+=1.3")
+          // .from("#address", 0.4, { opacity: 0, y: 40 }, "-=0.3")
+
+          // .from("#address", 0.4, { opacity: 0, y: 40 }, "+=1.3")
+          // .to("#name", 0.4, { y: 0 }, "-=0.3")
+          // .to("#slogan", 0.4, { opacity: 1, y: -125}, "-=0.3")
+          // .to("#txt01", 0.4, { opacity: 1, y: 0 }, "-=0.3")
+
+      });
+    </script>
+  </head>
+  <body>
+    <a href="javascript:window.open(window.clickTag)">
+      <div class="container">
+        <div id="pic" class="el">
+          <img src="bg.jpg" />
+        </div>
+        <div id="rect"  class="el"></div>
+        <div id="grad"  class="el"></div>
+
+        <div id="logo" class="el">
+          <img src="logo.svg" />
+        </div>
+        <div id="slogan" class="el">
+          <img src="slogan_2lines.svg" />
+        </div>
+        <div id="name" class="el">
+          <img src="name.svg" />
+        </div> 
+        <div id="txt01" class="el">
+          <img src="txt01.svg" />
+        </div> 
+        <!-- <div id="formula" class="el">
+          <img src="formula.svg" />
+        </div> 
+        <div id="address" class="el">
+          <img src="address.svg" />
+        </div>  -->
+        <div id="num" class="el">
+          <img src="num.svg" />
+        </div> 
+        <div id="legal" class="el">
+          <img src="legal.svg" />
+        </div> 
+        <!-- <div id="rect2"  class="el"></div>
+        <div id="grad2"  class="el"></div> -->
+        <div id="pack" class="el">
+          <img src="ocuvite.png" />
+        </div>
+
+
+
+        <div id="schirm"></div> 
+      </div>
+    </a>
+  </body>
+</html>
