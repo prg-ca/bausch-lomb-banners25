@@ -108,30 +108,30 @@ img {
   top: 435px;
 }
 #txt01 {
-  width: 274px;
+  width: 260px;
   left: 13px;
   top: 467px;
 }
 #formula {
-  width: 272px;
+  width:260px;
   left: 13px;
   top: 467px;
 }
 #address {
-  width: 274px;
+  width: 268px;
   left: 13px;
-  top: 436px;
+  top: 425px;
 }
 #num {
   width: 8px;
-  left:  284px;
-  top: 8px;
-  opacity: 0.6;
+  left:  282px;
+  top: 490px;
+  /* opacity: 0.6; */
 }
 #legal {
-  width: 274px;
+  width: 260px;
   left: 13px;
-  top: 558px;
+  top: 550px;
 }
 #legal_all {
   width: 278px;
@@ -150,37 +150,6 @@ img {
 
 
 
-
-
-#plane-l {
-  width: 73px;
-  left: 17px;
-  top: 283px;
-}
-
-#plane-r {
-  width: 73px;
-  left: 209px;
-  top: 283px;  
-}
-#palm-l {
-  width: 72px;
-  left: -25px;
-  top: 445px;
-}
-
-#palm-r {
-  width: 72px;
-  left: 252px;
-  top: 445px;
-}
-
-#ticket {
-  width: 238px;
-  left: 31px;
-  top: 347px;
-  transform: rotate(-5deg);
-}
 
 
 #schirm {

@@ -151,38 +151,6 @@ img {
 
 
 
-
-#plane-l {
-  width: 73px;
-  left: 17px;
-  top: 283px;
-}
-
-#plane-r {
-  width: 73px;
-  left: 209px;
-  top: 283px;  
-}
-#palm-l {
-  width: 72px;
-  left: -25px;
-  top: 445px;
-}
-
-#palm-r {
-  width: 72px;
-  left: 252px;
-  top: 445px;
-}
-
-#ticket {
-  width: 238px;
-  left: 31px;
-  top: 347px;
-  transform: rotate(-5deg);
-}
-
-
 #schirm {
   position: absolute;
   width: 300px;
