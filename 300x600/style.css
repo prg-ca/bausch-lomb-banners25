@@ -90,7 +90,7 @@ img {
   width: 140px;
   left: 13px;
   /* top: 336px; */
-  top: 446px;
+  top: 441px;
 }
 
 #slogan {
@@ -98,35 +98,35 @@ img {
   left: 13px;
   /* top: 186px; */
   /* top: 362px; */
-  top: 472px;
+  top: 465px;
 }
 
 
 #txt01 {
   width: 251px;
   left: 13px;
-  top: 446px;
+  top: 443px;
 }
 #address {
   width: 264px;
   left: 13px;
-  top: 511px;
+  top: 506px;
 }
 #num {
   width: 8px;
-  left:  284px;
-  top: 8px;
-  opacity: 0.6;
+  left:  282px;
+  top: 500px;
+  /* opacity: 0.6; */
 }
 #legal {
-  width: 274px;
+  width: 260px;
   left: 13px;
-  top: 558px;
+  top: 550px;
 }
 #legal_all {
-  width: 278px;
-  left: 13px;
-  top: 103px;
+  width: 294px;
+  left: 0px;
+  top: 105px;
 }
 
 

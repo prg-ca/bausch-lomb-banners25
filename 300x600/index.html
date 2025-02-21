@@ -12,14 +12,14 @@
       document.addEventListener("DOMContentLoaded", function (event) {
         TweenLite.ticker.useRAF(false);
         TweenLite.lagSmoothing(0);
-        var tl = new TimelineMax({ repeat: 2, repeatDelay: 3});
-        // var tl = new TimelineMax();
+        // var tl = new TimelineMax({ repeat: 2, repeatDelay: 3});
+        var tl = new TimelineMax();
 
         tl.from("#schirm", 0.6, { autoAlpha: 1 })
           .to("#pic", 1.4, { scale:  0.625, y: -20 }, "+=0.5")
           .from("#rect", 1.4, { y: 400 }, "-=1.6")
           .from("#grad", 0.8, { opacity: 0 }, "-=1.4")
-          // .to("#pic", 1.4, { scale:  0.625, y: -20 }, "-=0.25")
+          .from("#legal", 0.4, { opacity: 0}, "-=1.4")
           .from("#logo", 0.4, { opacity: 0, y: 40 }, "-=0.9")
           .from("#slogan", 0.4, { opacity: 0, y: 20 }, "-=0.7")
           .from("#pack1", 0.6, { opacity: 0, scale: 0.5 }, "-=0.4")
@@ -28,8 +28,8 @@
           .to("#pack2", 0.6, { scale: 0.62, y: -94, x: -82 }, "+=0.4")
           .from("#pack3", 0.6, { opacity: 0, scale: 0.5 }, "-=0.1")
           .to("#pack3", 0.6, { scale: 0.62, y: -80, x: -12 }, "+=0.4")
-          .to("#logo", 0.4, { y: -110 }, "-=0.5")
-          .to("#slogan", 0.4, { y: -110 }, "-=0.3")
+          .to("#logo", 0.4, { y: -105 }, "-=0.5")
+          .to("#slogan", 0.4, { y: -105 }, "-=0.3")
           .from("#txt01", 0.4, { opacity: 0, y: 40 }, "-=0.3")
           .from("#address", 0.4, { opacity: 0, y: 20 }, "-=0.3")
           
@@ -72,12 +72,8 @@
         <div id="address" class="el">
           <img src="address.svg" />
         </div> 
-        <div id="num" class="el">
-          <img src="num.svg" />
-        </div> 
-        <div id="legal" class="el">
-          <img src="legal.svg" />
-        </div> 
+
+
         <div id="rect2"  class="el"></div>
         <div id="grad2"  class="el"></div>
         <div id="pack1" class="el">
@@ -92,27 +88,12 @@
         <div id="legal_all" class="el">
           <img src="legal_all.svg" />
         </div> 
-
-        <!-- 
-        <div id="cloud-l" class="el">
-          <img src="cloud.svg" />
-        </div>
-        <div id="cloud-r" class="el">
-          <img src="cloud-r.svg" />
-        </div>
-        <div id="plane-l" class="el">
-          <img src="plane.svg" />
-        </div>
-        <div id="plane-r" class="el">
-          <img src="plane-r.svg" />
-        </div>
-        <div id="palm-l" class="el">
-          <img src="palm.svg" />
-        </div>
-        <div id="palm-r" class="el">
-          <img src="palm-r.svg" />
-        </div>
-        -->
+        <div id="num" class="el">
+          <img src="num.svg" />
+        </div> 
+        <div id="legal" class="el">
+          <img src="legal.svg" />
+        </div> 
 
         <div id="schirm"></div> 
       </div>
