@@ -12,8 +12,8 @@
       document.addEventListener("DOMContentLoaded", function (event) {
         TweenLite.ticker.useRAF(false);
         TweenLite.lagSmoothing(0);
-        // var tl = new TimelineMax({ repeat: 2, repeatDelay: 3});
-        var tl = new TimelineMax();
+        var tl = new TimelineMax({ repeat: 2, repeatDelay: 3});
+        // var tl = new TimelineMax();
 
         tl.from("#schirm", 0.6, { autoAlpha: 1 })
           .to("#pic", 1.4, { scale:  0.625, y: -30 }, "+=0.5")
