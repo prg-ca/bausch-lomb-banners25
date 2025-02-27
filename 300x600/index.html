@@ -16,7 +16,8 @@
         // var tl = new TimelineMax();
 
         tl.from("#schirm", 0.6, { autoAlpha: 1 })
-          .to("#pic", 1.4, { scale:  0.625, y: -50 }, "+=0.8")
+          .to("#pic", 1.4, { scale:  0.625, y: -60 }, "+=0.8")
+          .to("#top", 1.4, { y: -80 }, "-=1.4")
           .to(".first", 0.4, { opacity: 0 }, "-=1.1")
           .from("#rect", 1.4, { y: 400 }, "-=1.6")
           // .from("#grad", 0.8, { opacity: 0 }, "-=1.4")
@@ -60,7 +61,7 @@
         <div id="pic" class="el">
           <img src="bg.jpg" />
         </div>
-        <div id="top"  class="el  first">
+        <div id="top"  class="el ">
           <img src="top.svg" />
         </div>
         <div id="rect"  class="el"></div>
