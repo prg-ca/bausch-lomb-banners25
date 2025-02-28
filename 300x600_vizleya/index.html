@@ -17,6 +17,8 @@
 
         tl.from("#schirm", 0.6, { autoAlpha: 1 })
           .to("#pic", 1.4, { scale:  0.625, y: -20 }, "+=0.5")
+          .to("#bott", 0.6, { y: 80, opacity: 0 }, "-=1.4")
+          .to("#pack0", 0.6, { y: 80, opacity: 0 }, "-=1.4")
           .from("#rect", 1.2, { y: 400 }, "-=1.6")
           .from("#grad", 0.8, { opacity: 0 }, "-=1.4")
           .from("#legal", 0.4, { opacity: 0}, "-=1.4")
@@ -43,6 +45,8 @@
           .to("#name", 0.4, { y: 0 }, "-=0.3")
           .to("#slogan", 0.4, { opacity: 1, y: -113}, "-=0.3")
           .to("#txt01", 0.4, { opacity: 1, y: 0 }, "-=0.3")
+          .to("#legal", 0.4, { width: 260}, "-=0.1")
+          .from("#num", 0.4, { opacity: 0, x: 40 }, "-=0.4")
 
       });
     </script>
@@ -55,7 +59,12 @@
         </div>
         <div id="rect"  class="el"></div>
         <div id="grad"  class="el"></div>
-
+        <div id="bott"  class="el ">
+          <img src="bott.svg" />
+        </div>
+        <div id="pack0" class="el">
+          <img src="vizleya.png" />
+        </div>
         <div id="logo" class="el">
           <img src="logo.svg" />
         </div>
@@ -80,8 +89,7 @@
         <div id="legal" class="el">
           <img src="legal.svg" />
         </div> 
-        <!-- <div id="rect2"  class="el"></div>
-        <div id="grad2"  class="el"></div> -->
+
         <div id="pack" class="el">
           <img src="vizleya.png" />
         </div>

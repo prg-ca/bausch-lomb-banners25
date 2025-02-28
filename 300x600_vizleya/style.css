@@ -48,6 +48,11 @@ img {
   top: 0px;
   transform-origin: top center;
 }
+#bott {
+  width: 300px;
+  top: initial;
+  bottom: -5px;
+}
 /* #pic {
   width: 300px;
   left: 0px;
@@ -123,13 +128,13 @@ img {
   top: 370px;
 }
 #num {
-  width: 8px;
-  left:  282px;
-  top: 496px;
+  width: 6px;
+  left:  284px;
+  top: 519px;
   /* opacity: 0.6; */
 }
 #legal {
-  width: 260px;
+  width: 272px;
   left: 13px;
   top: 550px;
 }
@@ -145,7 +150,11 @@ img {
   left: 3px;
   top: 255px;
 }
-
+#pack0 {
+  width: 200px;
+  left: 97px;
+  top: 474px;
+}
 
 
 

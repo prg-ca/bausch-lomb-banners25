@@ -134,13 +134,13 @@ img {
   top: 506px;
 }
 #num {
-  width: 8px;
-  left:  282px;
-  top: 500px;
+  width: 6px;
+  left:  284px;
+  top: 520px;
   /* opacity: 0.6; */
 }
 #legal {
-  width: 260px;
+  width: 270px;
   left: 13px;
   top: 550px;
 }
