@@ -55,6 +55,13 @@ img {
   transform-origin: top center;
 } */
 
+#bott {
+  width: 300px;
+  top: initial;
+  bottom: -5px;
+}
+
+
 #rect {
   width: 300px;
   height: 600px;
@@ -121,13 +128,13 @@ img {
   top: 422px;
 }
 #num {
-  width: 8px;
-  left:  282px;
-  top: 490px;
+  width: 6px;
+  left:  284px;
+  top: 514px;
   /* opacity: 0.6; */
 }
 #legal {
-  width: 260px;
+  width: 270px;
   left: 13px;
   top: 550px;
 }
@@ -137,6 +144,11 @@ img {
   top: 103px;
 }
 
+#pack0 {
+  width: 200px;
+  left: 99px;
+  top: 501px;
+}
 
 #pack {
   width: 290px;

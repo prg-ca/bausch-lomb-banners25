@@ -45,7 +45,7 @@ img {
 #pic {
   width: 480px;
   left: -90px;
-  top: 0px;
+  top: 30px;
   transform-origin: top center;
 }
 /* #pic {
@@ -70,6 +70,26 @@ img {
   top: 510px;
   background-image: linear-gradient(to top, #b3d4e8 0%, #c6dfee 20%, #fff 100%);
 }
+
+#pack0_1 {
+  width: 143px;
+  left: 140px;
+  top: 500px;
+}
+
+#pack0_2 {
+  width: 123px;
+  left: 3px;
+  top: 497px;
+}
+
+#pack0_3 {
+  width: 132px;
+  left: 65px;
+  top: 536px;
+}
+
+
 #rect2 {
   width: 300px;
   height: 600px;
@@ -113,20 +133,20 @@ img {
   top: 506px;
 }
 #num {
-  width: 8px;
-  left:  282px;
-  top: 500px;
+  width: 6px;
+  left:  284px;
+  top: 520px;
   /* opacity: 0.6; */
 }
 #legal {
-  width: 260px;
+  width: 270px;
   left: 13px;
   top: 550px;
 }
 #legal_all {
-  width: 294px;
+  width: 288px;
   left: 0px;
-  top: 105px;
+  top: 95px;
 }
 
 

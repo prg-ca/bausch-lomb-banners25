@@ -16,10 +16,12 @@
         // var tl = new TimelineMax();
 
         tl.from("#schirm", 0.6, { autoAlpha: 1 })
-          .to("#pic", 1.4, { scale:  0.625, y: -20 }, "+=0.5")
+          .to("#pic", 1.4, { scale:  0.625, y: -60 }, "+=0.8")
+          .to("#top", 1.4, { y: -80 }, "-=1.4")
+          .to(".first", 0.4, { opacity: 0 }, "-=1.1")
           .from("#rect", 1.4, { y: 400 }, "-=1.6")
-          .from("#grad", 0.8, { opacity: 0 }, "-=1.4")
-          .from("#legal", 0.4, { opacity: 0}, "-=1.4")
+          // .from("#grad", 0.8, { opacity: 0 }, "-=1.4")
+          .from("#legal", 0.4, { opacity: 0}, "-=1.1")
           .from("#logo", 0.4, { opacity: 0, y: 40 }, "-=0.9")
           .from("#slogan", 0.4, { opacity: 0, y: 20 }, "-=0.7")
           .from("#pack1", 0.6, { opacity: 0, scale: 0.5 }, "-=0.4")
@@ -35,11 +37,12 @@
           
           .from("#rect2", 0.9, { y:600 }, "+=0.9")
           .from("#grad2", 0.4, { opacity: 0 }, "-=0.8")
-          .to("#pack1", 0.4, { y: -314 }, "-=0.6")
-          .to("#pack2", 0.4, { y: -314 }, "-=0.6")
-          .to("#pack3", 0.4, { y: -300 }, "-=0.6")
+          .to("#pack1", 0.4, { y: -320 }, "-=0.6")
+          .to("#pack2", 0.4, { y: -320 }, "-=0.6")
+          .to("#pack3", 0.4, { y: -307 }, "-=0.6")
+          .to("#logo", 0.4, { y: 90 }, "-=0.6")
           .from("#legal_all", 0.4, { opacity: 0, y: 40 }, "-=0.1")
-
+          
           .to("#legal_all", 0.5, { opacity: 0}, "+=2.5")
           .to("#rect2", 0.5, { y: 300}, "-=0.4")
           .to("#rect2", 0.2, { opacity: 0}, "-=0.3")
@@ -47,7 +50,10 @@
           .to("#pack1", 0.4, { y: -94 }, "-=0.5")
           .to("#pack2", 0.4, { y: -94 }, "-=0.5")
           .to("#pack3", 0.4, { y: -80 }, "-=0.5")
+          .to("#logo", 0.4, { y: -105 }, "-=0.5")
 
+          .to("#legal", 0.4, { width: 260}, "-=0.1")
+          .from("#num", 0.4, { opacity: 0, x: 40 }, "-=0.4")
       });
     </script>
   </head>
@@ -57,12 +63,22 @@
         <div id="pic" class="el">
           <img src="bg.jpg" />
         </div>
+        <div id="top"  class="el ">
+          <img src="top.svg" />
+        </div>
         <div id="rect"  class="el"></div>
         <div id="grad"  class="el"></div>
-
-        <div id="logo" class="el">
-          <img src="logo.svg" />
+        <div id="pack0_1" class="el  first">
+          <img src="vizleya.png" />
         </div>
+        <div id="pack0_2" class="el  first">
+          <img src="lutein.png" />
+        </div>
+        <div id="pack0_3" class="el  first">
+          <img src="ocuvite.png" />
+        </div>
+
+
         <div id="slogan" class="el">
           <img src="slogan_2lines.svg" />
         </div>
@@ -91,6 +107,9 @@
         <div id="num" class="el">
           <img src="num.svg" />
         </div> 
+        <div id="logo" class="el">
+          <img src="logo.svg" />
+        </div>
         <div id="legal" class="el">
           <img src="legal.svg" />
         </div> 
